@@ -1,0 +1,614 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookie &#8211; Just another WordPress site</title>
+    <meta name='robots' content='noindex,follow' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel='stylesheet' id='wp-block-library-css' href='/includes/css/dist/block-library/style.min.css?ver=5.2.1'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='wc-block-style-css'
+        href='/content/plugins/woocommerce/assets/css/blocks/style.css?ver=3.6.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-layout-css'
+        href='/content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=3.6.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-smallscreen-css'
+        href='/content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=3.6.4' type='text/css'
+        media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' id='woocommerce-general-css'
+        href='/content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.6.4' type='text/css' media='all' />
+    <style id='woocommerce-inline-inline-css' type='text/css'>
+        .woocommerce form .form-row .required {
+            visibility: visible;
+        }
+    </style>
+    <link rel='stylesheet' id='bootstrap-css'
+        href='/content/themes/bookie/vendor/bootstrap/css/bootstrap.min.css?ver=3.3.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='smartmenu-css'
+        href='/content/themes/bookie/vendor/smartmenu/jquery.smartmenus.bootstrap.css?ver=1.0.0' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='fontawesome-css'
+        href='/content/themes/bookie/vendor/fontawesome/css/font-awesome.min.css?ver=4.7.0' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='googlefonts-css'
+        href='https://fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CPT+Serif%3A400%2C700&#038;ver=5.2.1'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='js_composer_front-css'
+        href='/content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.7' type='text/css' media='all' />
+    <link rel='stylesheet' id='toko-style-theme-css' href='/content/themes/bookie/style-theme.css?ver=1.4.5'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='toko-style-woocommerce-css' href='/content/themes/bookie/style-woocommerce.css?ver=1.4.5'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='toko-style-shortcodes-css' href='/content/themes/bookie/style-shortcodes.css?ver=1.4.5'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='toko-style-css' href='/content/themes/bookie-child/style.css?ver=1.4.5' type='text/css'
+        media='all' />
+    <script type='text/javascript' src='/includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+    <script type='text/javascript' src='/includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+    <script type='text/javascript'
+        src='/content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+    <script src="/bootstrap-3.3.7/js/jquery-3.3.1.min.js"></script>
+    <script src="/vue/vue.js"></script>
+    <script type='text/javascript'
+        src='/content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=3.6.4'></script>
+    <script type='text/javascript'
+        src='/content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=5.7'></script>
+    <link rel="canonical" href="/" />
+    <link rel='shortlink' href='/' />
+
+
+    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" />
+
+    <noscript>
+        <style>
+            .woocommerce-product-gallery {
+                opacity: 1 !important;
+            }
+        </style>
+    </noscript>
+    <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
+    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
+    <link rel="icon" href="/content/uploads/2017/10/thumb.png" sizes="32x32" />
+    <link rel="icon" href="/content/uploads/2017/10/thumb.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="/content/uploads/2017/10/thumb.png" />
+    <meta name="msapplication-TileImage" content="/content/uploads/2017/10/thumb.png" />
+    <style type="text/css" data-type="vc_shortcodes-custom-css">
+        .vc_custom_1453085217674 {
+            margin-bottom: 0px !important;
+            padding-bottom: 60px !important;
+            background-color: #edf3f4 !important;
+        }
+
+        .vc_custom_1453113651999 {
+            margin-bottom: 0px !important;
+            padding-top: 20px !important;
+            padding-bottom: 60px !important;
+            background-color: #ffffff !important;
+        }
+
+        .vc_custom_1453089963538 {
+            padding-bottom: 60px !important;
+            background-color: #2f2b35 !important;
+        }
+
+        .vc_custom_1453099526859 {
+            padding-bottom: 20px !important;
+            background-color: #ffffff !important;
+        }
+    </style>
+    <noscript>
+        <style type="text/css">
+            .wpb_animate_when_almost_visible {
+                opacity: 1;
+            }
+        </style>
+    </noscript>
+    <!-- <noscript><img height="1" width="1" style="display:none"  -->
+    <!-- src="https://www.facebook.com/tr?id=516405008522686&ev=PageView&noscript=1"  -->
+    <!-- /></noscript> -->
+    <!-- End Facebook Pixel Code -->
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78978222-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments) };
+        gtag('js', new Date());
+        gtag('config', 'UA-78978222-2');
+    </script>
+</head>
+
+<body
+    class="home page-template page-template-page_visual_composer page-template-page_visual_composer-php page page-id-701 woocommerce-no-js header-large ltr has_slider header_absolute wpb-js-composer js-comp-ver-5.7 vc_responsive">
+    <div class="site-wrap">
+            <header class="section-site-header">
+                    <div class="site-header">
+                        <div class="container">
+                            <h1 class="site-brand pull-left">
+                                <a class="navbar-brand" href="/">
+                                    <div class="site-logo-text"> BookShop </div>
+                                    <p class="site-description">Welcome</p>
+                                </a>
+                            </h1>
+                            <div class="site-quicknav pull-right">
+                                <ul class="nav navbar-right">
+                                    <li class="dropdown visible-xs visible-sm">
+                                        <a href="#" class="dropdown-toggle" data-toggle="collapse" data-target=".navbar-collapse-top">
+                                            <i class="fa fa-navicon"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="site-menu navbar-inverse navbar-collapse collapse navbar-collapse-top ">
+                                <ul id="menu-header-menu" class="site-menu nav navbar-nav"  style="float: right">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home ">
+                                        <a title="Home" href="/">Home </a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a title="Bookstore" href="/book/list">Bookstore</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdowne">
+                                        <a title="管理员" href="/admin/login">管理员<span class="caret"></span></a>
+                                        <ul role="menu" class=" dropdown-menu">
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2903"><a title="管理员登录" href="/admin/login">管理员登录</a></li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2903"><a title="用户管理" href="/user/list">用户管理</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2908"><a title="书籍管理" href="/book/booklist">书籍管理</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdowne">
+                                        <a title="My Account" href="/user/login">我的账户<span class="caret"></span></a>
+                                        <ul role="menu" class=" dropdown-menu">
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2908"><a title="登录" href="/user/login">登录</a></li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2903"><a title="查看购物车" href="/user/cart">查看购物车</a></li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a title="修改个人信息" href="/user/edit">修改个人信息</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a title="Contact" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+        <div class="toko-slider-wrap">
+            <div class="toko-slides toko-slider-active">
+                <div class="toko-slide"
+                    style="background-image:url(/content/uploads/2016/06/slider-01.jpg);background-size:cover;background-position:center right;background-repeat:no-repeat;">
+                    <div class="toko-slide-inner">
+                        <div class="toko-slide-detail">
+                            <p class="toko-slide-desc">Reading is the best for get idea</p>
+                            <h2 class="toko-slide-title">Keep Reading</h2><a class="toko-slide-button" href="#">
+                                See more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="toko-slide"
+                    style="background-image:url(/content/uploads/2016/06/slider-02.jpg);background-size:cover;background-position:center right;background-repeat:no-repeat;">
+                    <div class="toko-slide-inner">
+                        <div class="toko-slide-detail">
+                            <p class="toko-slide-desc">Writing to improve your imagination</p>
+                            <h2 class="toko-slide-title">Let's Writing</h2><a class="toko-slide-button" href="#">
+                                See
+                                more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="toko-slide"
+                    style="background-image:url(/content/uploads/2016/06/slider-03.jpg);background-size:cover;background-position:center right;background-repeat:no-repeat;">
+                    <div class="toko-slide-inner">
+                        <div class="toko-slide-detail">
+                            <p class="toko-slide-desc">Reading is the best for get idea</p>
+                            <h2 class="toko-slide-title">Start Reading</h2><a class="toko-slide-button" href="#">
+                                See more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="main-content-container container">
+                <div id="content" class="main-content-inner" role="main">
+                    <article id="post-701" class="post-701 page type-page status-publish entry">
+                        <div class="entry-content">
+                            <div data-vc-full-width="true" data-vc-full-width-init="false"
+                                data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner">
+                                        <div class="wpb_wrapper">
+                                            <div class="books-search">
+                                                <div class="container">
+                                                    <form class="" method="get" action="/BookInfo/SelectByTitle/">
+                                                        <div class="row">
+                                                            <div class="col-sm-6 col-md-3">
+                                                                <div class="form-group">
+                                                                    <input name="title" value="" type="text"
+                                                                        class="form-control" id="keyword"
+                                                                        placeholder="Book Title">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 col-md-3">
+                                                                <div class="form-group">
+                                                                    <select name='product_cat' id='product_cat'
+                                                                        class='form-control'>
+                                                                        <option value='0'>Book Category</option>
+                                                                    </select>
+                                                                    <i class='select-arrow fa fa-angle-down'></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 col-md-3">
+                                                                <div class="form-group">
+                                                                    <select name='book_author' id='book_author'
+                                                                        class='form-control'>
+                                                                        <option value='0'>Book Author</option>
+                                                                    </select>
+                                                                    <i class='select-arrow fa fa-angle-down'></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 col-md-3">
+                                                                <div class="form-group">
+                                                                    <input type="hidden" name="post_type"
+                                                                        value="product" />
+                                                                    <button type="submit"
+                                                                        class="btn btn-primary btn-block">
+                                                                        <i class="fa fa-search"></i> &nbsp;Find Book
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row-full-width vc_clearfix"></div>
+                            <div data-vc-full-width="true" data-vc-full-width-init="false"
+                                class="vc_row wpb_row vc_row-fluid vc_custom_1453085217674 vc_row-has-fill">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner">
+                                        <div class="wpb_wrapper">
+                                            <style type="text/css">
+                                                .divider-5cf5cef95ed6e.toko-divider.line-yes .divider-inner {
+                                                    background-color: #edf3f4;
+                                                }
+
+                                                .divider-5cf5cef95ed6e.toko-divider.line-yes:before {
+                                                    background-color: #ecad25;
+                                                }
+
+                                                .divider-5cf5cef95ed6e.toko-divider .divider-inner h3 {
+                                                    color: #222222;
+                                                }
+
+                                                .divider-5cf5cef95ed6e.toko-divider .divider-inner p.paragraf {
+                                                    color: #969595;
+                                                }
+
+                                                .divider-5cf5cef95ed6e.toko-divider .divider-inner span {
+                                                    color: #5f5f5f;
+                                                }
+                                            </style>
+                                            <div class="toko-divider divider-5cf5cef95ed6e text-center line-no icon-no">
+                                                <div class="divider-inner">
+                                                    <h3 class="toko-section-title">Popular Books</h3>
+                                                </div>
+                                            </div>
+                                            <div id='app'>
+                                                <div
+                                                    class="toko-woocommerce woocommerce columns-4 toko-no-carousel clearfix">
+                                                    <ul class="products ">
+                                                        <div v-for="m in popularbooks">
+                                                            <li
+                                                                class="product type-product post-99 status-publish instock product_cat-culture product_cat-life-style product_tag-dream product_tag-music product_tag-sound has-post-thumbnail sale featured shipping-taxable purchasable product-type-simple">
+                                                                <div class="product-inner">
+                                                                    <a :href="'/book/product?bookid='+ m.bookId"
+                                                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                                        <figure class="product-image-box">
+                                                                            <img width="250" height="333"
+                                                                                :src="'/content/uploads/2016/06/'+m.picname"
+                                                                                class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                                                                alt="" />
+                                                                        </figure>
+                                                                        <div class="product-price-box clearfix">
+                                                                            <h2 class="woocommerce-loop-product__title">
+                                                                                {{m.title}}</h2>
+                                                                            <span
+                                                                                class="person-name vcard">{{m.author}}</span>
+                                                                            <span class="price">
+                                                                                <ins>
+                                                                                    <span
+                                                                                        class="woocommerce-Price-amount amount">
+                                                                                        <span
+                                                                                            class="woocommerce-Price-currencySymbol">&#36;</span>{{m.price}}
+                                                                                    </span>
+                                                                                </ins>
+                                                                            </span>
+                                                                        </div>
+                                                                    </a>
+                                                                    <div class="woo-button-wrapper">
+                                                                        <div class="woo-button-border">
+                                                                            <a :href="'/book/product?bookid='+ m.bookId"
+                                                                                class="button product-button">Detail</a>
+                                                                            <a @click="addtocart(m.bookId)"
+                                                                                class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                rel="nofollow">Buy</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row-full-width vc_clearfix"></div>
+                            <div data-vc-full-width="true" data-vc-full-width-init="false"
+                                class="vc_row wpb_row vc_row-fluid vc_custom_1453089963538 vc_row-has-fill vc_row-o-content-middle vc_row-flex">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner">
+                                        <div class="wpb_wrapper">
+                                            <h2 style="font-size: 26px;color: #96919d;text-align: center;font-family:Montserrat;font-weight:400;font-style:normal"
+                                                class="vc_custom_heading bookie-label">
+                                                 New Books
+                                            </h2>
+                                            <div id='new'>
+                                                <div
+                                                    class="toko-woocommerce woocommerce columns-4 toko-no-carousel clearfix">
+                                                    <ul class="products ">
+                                                        <div v-for="m in newbooks">
+                                                            <li
+                                                                class="product type-product status-publish instock product_cat-culture product_cat-life-style product_tag-dream product_tag-music product_tag-sound has-post-thumbnail sale featured shipping-taxable purchasable product-type-simple">
+                                                                <div class="product-inner">
+                                                                    <a :href="'/book/product?bookid='+ m.bookId"
+                                                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                                        <figure class="product-image-box">
+                                                                            <img width="250" height="333"
+                                                                                :src="'/content/uploads/2016/06/'+m.picname"
+                                                                                class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail">
+                                                                        </figure>
+                                                                        <div class="product-price-box clearfix">
+                                                                            <h2 class="woocommerce-loop-product__title">
+                                                                                {{m.title}}</h2>
+                                                                            <span
+                                                                                class="person-name vcard">{{m.author}}</span>
+                                                                            <span class="price">
+                                                                                <ins><span
+                                                                                        class="woocommerce-Price-amount amount"><span
+                                                                                            class="woocommerce-Price-currencySymbol">$</span>{{m.price}}</span></ins>
+                                                                            </span>
+                                                                        </div>
+                                                                    </a>
+                                                                    <div class="woo-button-wrapper">
+                                                                        <div class="woo-button-border">
+                                                                            <a :href="'/book/product?bookid='+ m.bookId"
+                                                                                class="button product-button">Detail</a>
+                                                                            <a  @click="addtocart(m.bookId)"
+                                                                                class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                rel="nofollow">Buy</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row-full-width vc_clearfix"></div>
+                            <div data-vc-full-width="true" data-vc-full-width-init="false"
+                                class="vc_row wpb_row vc_row-fluid vc_custom_1453099526859 vc_row-has-fill">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner">
+                                        <div class="wpb_wrapper">
+                                            <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                <figure class="wpb_wrapper vc_figure">
+                                                    <a href="#" target="_self"
+                                                        class="vc_single_image-wrapper   vc_box_border_grey">
+                                                        <img width="1170" height="140"
+                                                            src="/content/uploads/2016/06/home1-leaderboard-01.jpg"
+                                                            class="vc_single_image-img attachment-full" alt="" />
+                                                    </a>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row-full-width vc_clearfix"></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <footer class="section-site-footer">
+            <div class="site-footer">
+                <div class="container">
+                    <div class="footer-menu-wrap">
+                        <ul id="menu-footer-menu" class="footer-menu nav navbar-nav navbar-center">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2796">
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2797">
+                                <a href="#">TOS</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2798">
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-credit">
+                        <p>Bookshop</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        var c = document.body.className;
+        c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+        document.body.className = c;
+    </script>
+    <link rel='stylesheet' id='owlcarousel2-css'
+        href='/content/plugins/toko-shortcodes/vendors/owl-carousel/owl.carousel.css?ver=2.2.0' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='vc_google_fonts_montserratregular700-css'
+        href='https://fonts.googleapis.com/css?family=Montserrat%3Aregular%2C700&#038;ver=5.2.1' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='vc_entypo-css'
+        href='/content/plugins/js_composer/assets/css/lib/vc-entypo/vc_entypo.min.css?ver=5.7' type='text/css'
+        media='all' />
+    <script type='text/javascript'
+        src='/content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
+    <script type='text/javascript'
+        src='/content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=3.6.4'></script>
+    <script type='text/javascript'
+        src='/content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=3.6.4'></script>
+    <script type='text/javascript' src='/content/themes/bookie/vendor/bootstrap/js/bootstrap.min.js?ver=3.3.5'></script>
+    <script type='text/javascript'
+        src='/content/themes/bookie/vendor/smartmenu/jquery.smartmenus.min.js?ver=1.0.0'></script>
+    <script type='text/javascript'
+        src='/content/themes/bookie/vendor/smartmenu/jquery.smartmenus.bootstrap.min.js?ver=0.2.0'></script>
+    <script type='text/javascript' src='/includes/js/comment-reply.min.js?ver=5.2.1'></script>
+    <script type='text/javascript' src='/content/themes/bookie/js/script.js?ver=1.4.5'></script>
+    <script type='text/javascript' src='/includes/js/embed.min.js?ver=5.2.1'></script>
+    <script type='text/javascript'
+        src='/content/plugins/toko-shortcodes/vendors/owl-carousel/owl.carousel.min.js?ver=2.2.0'></script>
+    <script type='text/javascript'>
+        jQuery(function ($) { $('.toko-slider-active').owlCarousel({ items: 1, loop: true, autoplayTimeout: 5000, animateOut: 'fadeOut', dots: true, nav: true, autoplay: true, autoplayHoverPause: true, lazyLoad: true, smartSpeed: 700, autoHeight: true, navText: ['<span class="slide-prev-nav"><i class="fa fa-angle-left"></i></span>', '<span class="slide-next-nav"><i class="fa fa-angle-right"></i></span>'] }).addClass('owl-carousel owl-theme'); });
+    </script>
+    <script>
+        var data = {
+            popularbooks: [
+                {
+                    bookId: 1, ISBN: '1', password: 'abc', title: '1', author: 'abc', version: '1', price: '12', pudate: 'abc', introdu: '1',
+                    picname: 'book-03.jpg', type: '1'
+                },
+            ],
+            book: { id: 0, username: '', password: '' }
+        };
+        new Vue({
+            el: '#app',
+            data: data,
+            mounted: function () {
+                this.getpopularbooks();
+            },
+            methods: {
+                getpopularbooks: function () {
+                    var that = this;
+                    $.ajax({
+                        type: "get",
+                        url: "http://123.56.107.216:9000/getpopularbooks",
+                        dataType: "json",
+                        success: function (data) {
+                            that.popularbooks = [];
+                            for (let index in data) {
+                                that.popularbooks.push(data[index]);
+                            }
+                        }
+                    });
+                },
+                getpopularbooks: function () {
+                    var that = this;
+                    $.ajax({
+                        type: "get",
+                        url: "http://123.56.107.216:9000/getpopularbooks",
+                        dataType: "json",
+                        success: function (data) {
+                            that.popularbooks = [];
+                            for (let index in data) {
+                                that.popularbooks.push(data[index]);
+                            }
+                        }
+                    });
+                },
+                addtocart: function (bookid) {
+                    var that = this;
+                    $.ajax({
+                        type: "get",
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        url: "http://123.56.107.216:9000/order/AddToOrderbyOne",
+                        dataType: "json",
+                        data: { bookid: bookid },
+                        success: function (data) {
+                             alert(data.data);
+                            
+                        },
+                    });
+                },
+            }
+        });
+    </script>
+    <script>
+        var data = {
+            newbooks: [
+                {
+                    bookId: 1, ISBN: '1', password: 'abc', title: '1', author: 'abc', version: '1', price: '12', pudate: 'abc', introdu: '1',
+                    picname: 'book-03.jpg', type: '1'
+                },
+            ],
+        };
+        new Vue({
+            el: '#new',
+            data: data,
+            mounted: function () {
+                this.getnewbooks();
+            },
+            methods: {
+                getnewbooks: function () {
+                    var that = this;
+                    $.ajax({
+                        type: "get",
+                        url: "http://123.56.107.216:9000/getnewbooks",
+                        dataType: "json",
+                        success: function (data) {
+                            that.newbooks = [];
+                            for (let index in data) {
+                                that.newbooks.push(data[index]);
+                            }
+                        }
+                    });
+                },
+                addtocart: function (bookid) {
+                    var that = this;
+                    $.ajax({
+                        type: "get",
+                        //crossDomain: true,
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        url: "http://123.56.107.216:9000/order/AddToOrderbyOne",
+                        dataType: "json",
+                        data: { bookid: bookid },
+                        success: function (data) {
+                                alert(data.data);
+                                //window.location.href="/book/list";
+                        },
+                    });
+                },
+            }
+        });
+    </script>
+    <script type='text/javascript'
+        src='/content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.7'></script>
+</body>
+
+</html>

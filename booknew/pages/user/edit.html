@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UserEdit &#8211; BookShop</title>
+    <meta name='robots' content='noindex,follow' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel='stylesheet' id='wp-block-library-css' href='/includes/css/dist/block-library/style.min.css?ver=5.2.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='wc-block-style-css' href='/content/plugins/woocommerce/assets/css/blocks/style.css?ver=3.6.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='select2-css' href='/content/plugins/woocommerce/assets/css/select2.css?ver=3.6.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-layout-css' href='/content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=3.6.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-smallscreen-css' href='/content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=3.6.4' type='text/css' media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' id='woocommerce-general-css' href='/content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.6.4' type='text/css' media='all' />
+    <style id='woocommerce-inline-inline-css' type='text/css'>
+        .woocommerce form .form-row .required {
+            visibility: visible;
+        }
+    </style>
+    <link rel='stylesheet' id='bootstrap-css' href='/content/themes/bookie/vendor/bootstrap/css/bootstrap.min.css?ver=3.3.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='smartmenu-css' href='/content/themes/bookie/vendor/smartmenu/jquery.smartmenus.bootstrap.css?ver=1.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='fontawesome-css' href='/content/themes/bookie/vendor/fontawesome/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='googlefonts-css' href='https://fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CPT+Serif%3A400%2C700&#038;ver=5.2.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='toko-style-theme-css' href='/content/themes/bookie/style-theme.css?ver=1.4.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='toko-style-woocommerce-css' href='/content/themes/bookie/style-woocommerce.css?ver=1.4.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='toko-style-shortcodes-css' href='/content/themes/bookie/style-shortcodes.css?ver=1.4.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='toko-style-css' href='/content/themes/bookie-child/style.css?ver=1.4.5' type='text/css' media='all' />
+    <script type='text/javascript' src='/includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+    <script type='text/javascript' src='/includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+    <script type='text/javascript' src='/content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+    <script type='text/javascript' src='/content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=3.6.4'></script>
+    <script type='text/javascript' src='/includes/js/zxcvbn-async.min.js?ver=1.0'></script>
+    <script type='text/javascript' src='/content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=5.7'></script>
+    <link rel="canonical" href="https://tokopress.club/bookie2/standard/checkout-2/addbook.html" />
+    <link rel='shortlink' href='https://tokopress.club/bookie2/standard/?p=1708' />
+    <noscript>
+    <style>
+        .woocommerce-product-gallery {
+            opacity: 1 !important;
+        }
+    </style></noscript>
+    <meta name='robots' content='noindex,follow' />
+    <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
+    <link rel="icon" href="/content/uploads/2017/10/thumb.png" sizes="32x32" />
+    <link rel="icon" href="/content/uploads/2017/10/thumb.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="/content/uploads/2017/10/thumb.png" />
+    <meta name="msapplication-TileImage" content="/content/uploads/2017/10/thumb.png" />
+    <noscript>
+    <style type="text/css">
+        .wpb_animate_when_almost_visible {
+            opacity: 1;
+        }
+    </style></noscript><!-- Facebook Pixel Code -->
+    <script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('set', 'autoConfig', false, '516405008522686');
+fbq('init', '516405008522686');
+fbq('track', "PageView");
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78978222-2"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-78978222-2');
+    </script>
+        <script src="/bootstrap-3.3.7/js/jquery-3.3.1.min.js"></script>
+        <script src="/vue/vue.js"></script>
+</head>
+<body class="page-template page-template-page_fullwidth page-template-page_fullwidth-php page page-id-1708 woocommerce-checkout woocommerce-page woocommerce-no-js header-large ltr wpb-js-composer js-comp-ver-5.7 vc_responsive">
+    <div class="site-wrap">
+            <header class="section-site-header">
+                    <div class="site-header" id='head'>
+                        <div class="container">
+                            <h1 class="site-brand pull-left">
+                                <a class="navbar-brand" href="/">
+                                    <div class="site-logo-text"> BookShop </div>
+                                    <p class="site-description">Welcome</p>
+                                </a>
+                            </h1>
+                            <div class="site-quicknav pull-right">
+                                <ul class="nav navbar-right">
+                                    <li class="dropdown visible-xs visible-sm">
+                                        <a href="#" class="dropdown-toggle" data-toggle="collapse" data-target=".navbar-collapse-top">
+                                            <i class="fa fa-navicon"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="site-menu navbar-inverse navbar-collapse collapse navbar-collapse-top ">
+                                <ul id="menu-header-menu" class="site-menu nav navbar-nav"  style="float: right">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home ">
+                                        <a title="Home" href="/">Home </a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a title="Bookstore" href="/book/list">Bookstore</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdowne">
+                                        <a title="管理员" href="/admin/login">管理员<span class="caret"></span></a>
+                                        <ul role="menu" class=" dropdown-menu">
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2903"><a title="管理员登录" href="/admin/login">管理员登录</a></li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2903"><a title="用户管理" href="/user/list">用户管理</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2908"><a title="书籍管理" href="/book/booklist">书籍管理</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2908"><a title="退出" @click="adminlogout()">退出</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdowne">
+                                        <a title="我的账户" href="/user/login">我的账户<span class="caret"></span></a>
+                                        <ul role="menu" class=" dropdown-menu">
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2908"><a title="登录" href="/user/login">登录</a></li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2903"><a title="查看购物车" href="/user/cart">查看购物车</a></li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a title="修改个人信息" href="/user/edit">修改个人信息</a></li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a title="退出" @click="userlogout()">退出</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a title="Contact" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+        <section id="page-title" class="page-title">
+            <div class="container">
+                <h1>UserEdit</h1>
+                <ol class="breadcrumb-trail breadcrumb breadcrumbs"><li>
+                        <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                            <a itemprop="url" class="home" href="/">Home</a>
+                        </span>
+                    </li>
+                    <li class="active">
+                        <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="active">
+                            <span itemprop="title">UserEdit</span>
+                        </span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <div class="main-content">
+            <div class="main-content-container container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="content" class="main-content-inner" role="main">
+                            <article id="post-1708" class="post-1708 page type-page status-publish entry">
+                                <div class="entry-content" id="app">
+                                    <div class="woocommerce" v-for="m in user">
+                                        <div class="woocommerce-notices-wrapper"></div>
+                                        <form id="editform" name="checkout" method="post"  enctype="multipart/form-data" >
+                                            <div class="col2-set">
+                                                <div class="col-1">
+                                                    <div class="woocommerce-billing-fields">
+                                                        <h3>User information</h3>
+                                                        <span style="color:red;" th:text="${msg}"></span>
+                                                        <div class="woocommerce-billing-fields__field-wrapper " >
+                                                            <div><input type="hidden" name="id"  v-model="m.id" ></div>
+                                                            <p class="form-row form-row-first validate-required" id="billing_first_name_field" data-priority="10">
+                                                                <label for="username" class="">用户名&nbsp;<abbr class="required" title="required">*</abbr></label>
+                                                                <span class="woocommerce-input-wrapper">
+                                                                    <input type="hidden" class="input-text " name="userid"   value="" autocomplete="given-name" />
+                                                                    <input type="text" class="input-text " name="username" id="username"  placeholder="请输入昵称" v-model="m.username"  />
+                                                                </span>
+                                                            </p>
+                                                            <p class="form-row form-row-last validate-required" id="billing_last_name_field" data-priority="20">
+                                                                <label for="password" class="">密码&nbsp;<abbr class="required" title="required">*</abbr></label>
+                                                                <span class="woocommerce-input-wrapper">
+                                                                    <input type="password" class="input-text " name="password" id="password"   placeholder="请输入密码" v-model="m.password" />
+                                                                </span>
+                                                            </p>
+                                                            <p class="form-row form-row-wide" >
+                                                                <label for="address" class="">地址&nbsp;<span class="optional"></span></label>
+                                                                <span class="woocommerce-input-wrapper">
+                                                                    <input type="text" class="input-text " name="address" id="address"  placeholder="请输入地址" v-model="m.address" />
+                                                                </span>
+                                                            </p>
+                                                            <p class="form-row form-row-wide address-field validate-required validate-postcode" id="billing_postcode_field" data-priority="90">
+                                                                <label for="postcode" class="">邮编 / ZIP&nbsp;<abbr class="required" title="required">*</abbr></label>
+                                                                <span class="woocommerce-input-wrapper">
+                                                                    <input type="text" class="input-text " name="postcode" id="postcode"  placeholder="请输入地址" v-model="m.postcode" />
+                                                                </span>
+                                                            </p>
+                                                            <p class="form-row form-row-wide validate-required validate-phone" id="billing_phone_field" >
+                                                                <label for="phone" class="">电话&nbsp;<abbr class="required" title="required">*</abbr></label>
+                                                                <span class="woocommerce-input-wrapper">
+                                                                    <input type="tel" class="input-text " name="phone" id="phone"  placeholder="请输入联系方式" v-model="m.phone"  />
+                                                                </span>
+                                                            </p>
+                                                            <p class="form-row form-row-wide validate-required validate-email" id="billing_email_field" >
+                                                                <label for="email" class="">邮箱&nbsp;<abbr class="required" title="required">*</abbr></label>
+                                                                <span class="woocommerce-input-wrapper">
+                                                                    <input type="email" class="input-text " name="email" id="email"  placeholder="请输入邮箱" v-model="m.email"   />
+                                                                </span>
+                                                            </p>
+                                                            <p colspan="6" class="actions">
+                                                                <a @click="edit()">
+                                                                    <button type="button" class="button" value="Update cart">确认修改</button>
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="section-site-footer">
+            <div class="site-footer">
+                <div class="container">
+                    <div class="footer-menu-wrap">
+                        <ul id="menu-footer-menu" class="footer-menu nav navbar-nav navbar-center">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2796">
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                            <li
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2797">
+                                <a href="#">TOS</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2798">
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-credit">
+                        <p>Bookshop</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        var paras = location.search;			//search获得地址中的参数，内容为'?itemId=12'
+        var result = paras.match(/[^\?&]*=[^&]*/g); 	//match是字符串中符合的字段一个一个取出来，result中的值为['login=xx','table=admin']
+        paras = {};					//让paras变成没有内容的json对象
+        for (i in result) {
+            var temp = result[i].split('=');	//split()将一个字符串分解成一个数组,两次遍历result中的值分别为['itemId','xx']
+            paras[temp[0]] = temp[1];
+        }
+        var userid = paras.userid;     //根据参数名"itemId"，获取参数值
+
+        var data = {
+            user: [{
+            
+                id: 14,
+                username: "111",
+                password: "123456",
+                phone: "213123",
+                email: "1231",
+                address: "123",
+                postcode: "123"
+            },
+        ],
+            
+        };
+        new Vue({
+            el: '#app',
+            data: data,
+            mounted: function () {
+                if(userid!=null)
+                {
+                    this.getuserinfoadmin(userid);
+                }
+                else
+                    this.getuserinfo();
+            },
+            methods: {
+                getuserinfoadmin: function (userid) {
+                    var that = this;
+                    $.ajax({
+                        type: "get",
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        url: "http://123.56.107.216:9000/user/SelectByUserId",
+                        data: { userid: userid },
+                        dataType: "json",
+                        success: function (data) {
+                            if(data=="管理员未登录，或者没有权限！")
+                            {
+                                alert(data);
+                                window.location.href("/admin/login");
+                            }
+                            that.user = [];
+                            that.user = {data};
+                        }
+                    });
+                },
+                getuserinfo: function () {
+                    var that = this;
+                    $.ajax({
+                        type: "get",
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        url: "http://123.56.107.216:9000/user/SelectByUserSession",
+                        dataType: "json",
+                        success: function (data) {
+                            if(data=="用户未登录！")
+                            {
+                                alert(data);
+                                window.location.href("/user/login");
+                            }
+                            that.user = [];
+                            that.user = {data};
+                        },
+                        error:function(data){
+                            alert("请先登录");
+                            window.location.href("/user/login");
+                        }
+                    });
+                },
+                edit: function () {
+                    var that = this;
+                    $.ajax({
+                        type: "post",
+                        data: $('#editform').serialize(),
+                        url: "http://123.56.107.216:9000/user/edit",
+                        dataType: "json",
+                        success: function (data) {
+                            if(data.status==1){
+                                alert(data.data);
+                                if(userid!=null)
+                                window.location.href="/user/list";
+                                else
+                                window.location.href="/user/edit";
+                            }
+                            else{
+                                alert(data.data);
+                            }
+                        }                        
+                    });
+                },   
+            }
+        });
+    </script>
+	<script>
+        new Vue({
+            el: '#head',
+            data: data,
+            methods: {
+                userlogout: function () {
+                    var that = this;
+                    $.ajax({
+                        type: "post",
+                        url: "http://123.56.107.216:9000/user/logout",
+                        dataType: "json",
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        success: function (data) {
+                            alert(data.data);
+                        }
+                    });
+                },
+                adminlogout: function () {
+                    var that = this;
+                    $.ajax({
+                        type: "post",
+                        //crossDomain: true,
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        url: "http://123.56.107.216:9000/admin/logout",
+                        dataType: "json",
+                        success: function (data) {
+                                alert(data.data);
+                                
+                        },
+                    });
+                },
+            }
+        });
+    </script>
+    <script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
+    </script>
+    <script type='text/javascript' src='/content/plugins/woocommerce/assets/js/selectWoo/selectWoo.full.min.js?ver=1.0.6'></script>
+    <script type='text/javascript'>
+/* <![CDATA[ */
+var pwsL10n = {"unknown":"Password strength unknown","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
+/* ]]> */
+    </script>
+    <script type='text/javascript' src='/admin/js/password-strength-meter.min.js?ver=5.2.1'></script>
+    <script type='text/javascript'>
+/* <![CDATA[ */
+var wc_password_strength_meter_params = {"min_password_strength":"3","i18n_password_error":"Please enter a stronger password.","i18n_password_hint":"Hint: The password should be at least twelve characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! \" ? $ % ^ & )."};
+/* ]]> */
+    </script>
+    <script type='text/javascript' src='/content/plugins/woocommerce/assets/js/frontend/password-strength-meter.min.js?ver=3.6.4'></script>
+    <script type='text/javascript' src='/content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
+    </script>
+    <script type='text/javascript' src='/content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=3.6.4'></script>
+    <script type='text/javascript' src='/content/plugins/woocommerce/assets/js/frontend/country-select.min.js?ver=3.6.4'></script>
+    <script type='text/javascript' src='/content/plugins/woocommerce/assets/js/frontend/address-i18n.min.js?ver=3.6.4'></script>
+
+    </script>
+    <script type='text/javascript' src='/content/plugins/woocommerce/assets/js/frontend/checkout.min.js?ver=3.6.4'></script>
+    <script type='text/javascript' src='/content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=3.6.4'></script>
+    <script type='text/javascript' src='/content/themes/bookie/vendor/bootstrap/js/bootstrap.min.js?ver=3.3.5'></script>
+    <script type='text/javascript' src='/content/themes/bookie/vendor/smartmenu/jquery.smartmenus.min.js?ver=1.0.0'></script>
+    <script type='text/javascript' src='/content/themes/bookie/vendor/smartmenu/jquery.smartmenus.bootstrap.min.js?ver=0.2.0'></script>
+    <script type='text/javascript' src='/content/themes/bookie/js/script.js?ver=1.4.5'></script>
+    <script type='text/javascript' src='/includes/js/embed.min.js?ver=5.2.1'></script>
+</body>
+</html>

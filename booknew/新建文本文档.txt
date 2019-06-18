@@ -1,0 +1,1 @@
+{id:1,ISBN:'1',password:'abc',title:'1',author:'abc',version:'1',pudate:'abc',introdu:'1',picname:'abc',type:'1'},

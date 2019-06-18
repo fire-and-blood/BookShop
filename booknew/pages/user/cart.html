@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart &#8211; BookShop</title>
+    <meta name='robots' content='noindex,follow' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel='stylesheet' id='wp-block-library-css' href='/includes/css/dist/block-library/style.min.css?ver=5.2.1'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='wc-block-style-css'
+        href='/content/plugins/woocommerce/assets/css/blocks/style.css?ver=3.6.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='select2-css' href='/content/plugins/woocommerce/assets/css/select2.css?ver=3.6.4'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-layout-css'
+        href='/content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=3.6.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-smallscreen-css'
+        href='/content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=3.6.4' type='text/css'
+        media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' id='woocommerce-general-css'
+        href='/content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.6.4' type='text/css' media='all' />
+    <style id='woocommerce-inline-inline-css' type='text/css'>
+        .woocommerce form .form-row .required {
+            visibility: visible;
+        }
+    </style>
+    <link rel='stylesheet' id='bootstrap-css'
+        href='/content/themes/bookie/vendor/bootstrap/css/bootstrap.min.css?ver=3.3.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='smartmenu-css'
+        href='/content/themes/bookie/vendor/smartmenu/jquery.smartmenus.bootstrap.css?ver=1.0.0' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='fontawesome-css'
+        href='/content/themes/bookie/vendor/fontawesome/css/font-awesome.min.css?ver=4.7.0' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='googlefonts-css'
+        href='https://fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CPT+Serif%3A400%2C700&#038;ver=5.2.1'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='toko-style-theme-css' href='/content/themes/bookie/style-theme.css?ver=1.4.5'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='toko-style-woocommerce-css' href='/content/themes/bookie/style-woocommerce.css?ver=1.4.5'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='toko-style-shortcodes-css' href='/content/themes/bookie/style-shortcodes.css?ver=1.4.5'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='toko-style-css' href='/content/themes/bookie-child/style.css?ver=1.4.5' type='text/css'
+        media='all' />
+    <script type='text/javascript' src='/includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+    <script type='text/javascript' src='/includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+    <script type='text/javascript'
+        src='/content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+
+    <script type='text/javascript'
+        src='/content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=3.6.4'></script>
+    <script type='text/javascript' src='/includes/js/zxcvbn-async.min.js?ver=1.0'></script>
+    <script type='text/javascript'
+        src='/content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=5.7'></script>
+    <noscript>
+        <style>
+            .woocommerce-product-gallery {
+                opacity: 1 !important;
+            }
+        </style>
+    </noscript>
+    <meta name='robots' content='noindex,follow' />
+    <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
+    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
+    <link rel="icon" href="/content/uploads/2017/10/thumb.png" sizes="32x32" />
+    <link rel="icon" href="/content/uploads/2017/10/thumb.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="/content/uploads/2017/10/thumb.png" />
+    <meta name="msapplication-TileImage" content="/content/uploads/2017/10/thumb.png" />
+    <noscript>
+        <style type="text/css">
+            .wpb_animate_when_almost_visible {
+                opacity: 1;
+            }
+        </style>
+    </noscript><!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }; if (!f._fbq) f._fbq = n;
+            n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('set', 'autoConfig', false, '516405008522686');
+        fbq('init', '516405008522686');
+        fbq('track', "PageView");
+    </script>
+    <!-- <noscript><img height="1" width="1" style="display:none"  -->
+    <!-- src="https://www.facebook.com/tr?id=516405008522686&ev=PageView&noscript=1"  -->
+    <!-- /></noscript> -->
+    <!-- End Facebook Pixel Code -->
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78978222-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments) };
+        gtag('js', new Date());
+
+        gtag('config', 'UA-78978222-2');
+    </script>
+    <script src="/bootstrap-3.3.7/js/jquery-3.3.1.min.js"></script>
+    <script src="/vue/vue.js"></script>
+</head>
+
+<body
+    class="page-template page-template-page_fullwidth page-template-page_fullwidth-php page page-id-1707 woocommerce-cart woocommerce-page woocommerce-no-js header-large ltr wpb-js-composer js-comp-ver-5.7 vc_responsive">
+    <div class="site-wrap">
+            <header class="section-site-header">
+                    <div class="site-header" id='head'>
+                        <div class="container">
+                            <h1 class="site-brand pull-left">
+                                <a class="navbar-brand" href="/">
+                                    <div class="site-logo-text"> BookShop </div>
+                                    <p class="site-description">Welcome</p>
+                                </a>
+                            </h1>
+                            <div class="site-quicknav pull-right">
+                                <ul class="nav navbar-right">
+                                    <li class="dropdown visible-xs visible-sm">
+                                        <a href="#" class="dropdown-toggle" data-toggle="collapse" data-target=".navbar-collapse-top">
+                                            <i class="fa fa-navicon"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="site-menu navbar-inverse navbar-collapse collapse navbar-collapse-top ">
+                                <ul id="menu-header-menu" class="site-menu nav navbar-nav"  style="float: right">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home ">
+                                        <a title="Home" href="/">Home </a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a title="Bookstore" href="/book/list">Bookstore</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdowne">
+                                        <a title="管理员" href="/admin/login">管理员<span class="caret"></span></a>
+                                        <ul role="menu" class=" dropdown-menu">
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2903"><a title="管理员登录" href="/admin/login">管理员登录</a></li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2903"><a title="用户管理" href="/user/list">用户管理</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2908"><a title="书籍管理" href="/book/booklist">书籍管理</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2908"><a title="退出" @click="adminlogout()">退出</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdowne">
+                                        <a title="我的账户" href="/user/login">我的账户<span class="caret"></span></a>
+                                        <ul role="menu" class=" dropdown-menu">
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2908"><a title="登录" href="/user/login">登录</a></li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2903"><a title="查看购物车" href="/user/cart">查看购物车</a></li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a title="修改个人信息" href="/user/edit">修改个人信息</a></li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a title="退出" @click="userlogout()">退出</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a title="Contact" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+        <section id="page-title" class="page-title">
+            <div class="container">
+                <h1>Cart</h1>
+                <ol class="breadcrumb-trail breadcrumb breadcrumbs">
+                    <li><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                            <a itemprop="url" class="home" href="/">Home</a></span></li>
+                    <li class="active">
+                        <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="active"><span
+                                itemprop="title">Cart</span></span></li>
+                </ol>
+            </div>
+        </section>
+        <div class="main-content">
+            <div class="main-content-container container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="content" class="main-content-inner" role="main">
+                            <article id="post-1707" class="post-1707 page type-page status-publish entry">
+                                <div class="entry-content">
+                                    <div id='app'>
+                                        <div class="woocommerce">
+                                            <div class="woocommerce-notices-wrapper"></div>
+                                            
+                                                <form class="woocommerce-cart-form" action="#">
+                                                    <div >
+                                                    <table
+                                                        class="shop_table shop_table_responsive cart woocommerce-cart-form__contents"
+                                                        cellspacing="0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="product-remove">&nbsp;</th>
+                                                                <th class="product-thumbnail">&nbsp;</th>
+                                                                <th class="product-name">Product</th>
+                                                                <th class="product-price">Price</th>
+                                                                <th class="product-quantity">Quantity</th>
+                                                                <th class="product-subtotal">Total</th>
+                                                            </tr>
+                                                        </thead>
+                                                        
+                                                        <tbody>
+                                                            
+                                                            <tr class="woocommerce-cart-form__cart-item cart_item" v-for="m in cartbooks">
+                                                                <td class="product-remove">
+                                                                    <a @click="deletecartbook(m.orderid)"
+                                                                        class="remove" aria-label="Remove this item"
+                                                                        data-product_id="99"
+                                                                        data-product_sku="">&times;</a>
+                                                                </td>
+                                                                <td class="product-thumbnail">
+                                                                    <a
+                                                                    :href="'/book/product?bookid='+ m.bookId">
+                                                                        <img width="250" height="333"
+                                                                            :src="'/content/uploads/2016/06/'+m.picname"
+                                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                                                            alt="" />
+                                                                    </a>
+                                                                </td>
+                                                                <td class="product-name" data-title="Product">
+                                                                    <a :href="'/book/product?bookid='+ m.bookId">{{m.title}}</a> </td>
+                                                                <td class="product-price" data-title="Price">
+                                                                    <span class="woocommerce-Price-amount amount"><span
+                                                                            class="woocommerce-Price-currencySymbol">&#36;</span>{{m.price}}</span>
+                                                                </td>
+                                                                <td class="product-quantity" data-title="Quantity">
+                                                                    <span
+                                                                        class="woocommerce-Price-amount amount">{{m.quantity}}</span>
+                                                                </td>
+                                                                <td class="product-subtotal" data-title="Total">
+                                                                    <span class="woocommerce-Price-amount amount"><span
+                                                                            class="woocommerce-Price-currencySymbol">&#36;</span>{{m.totalprice}}</span>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td colspan="6" class="actions">
+                                                                    <a href="" @click="getcart">
+                                                                        <button class="button" type="button"
+                                                                            value="Update cart">Update
+                                                                            cart</button>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </form>
+                                            
+                                            <div class="cart-collaterals">
+                                                <div class="cross-sells">
+                                                    <h2>You may be interested in&hellip;</h2>
+                                                    <ul class="products columns-2">
+                                                        <div v-for="m in popularbooks">
+                                                            <li
+                                                                class="product type-product post-67 status-publish instock product_cat-science product_tag-dream product_tag-etnic product_tag-novel has-post-thumbnail shipping-taxable purchasable product-type-simple">
+                                                                <div class="product-inner">
+                                                                    <a :href="'/book/product?bookid='+ m.bookId"
+                                                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                                        <figure class="product-image-box">
+                                                                            <img width="250" height="333"
+                                                                                :src="'/content/uploads/2016/06/'+m.picname"
+                                                                                class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                                                                alt="" /></figure>
+                                                                        <div class="product-price-box clearfix">
+                                                                            <h2 class="woocommerce-loop-product__title"
+                                                                                >{{m.title}}</h2><span
+                                                                                class="person-name vcard">{{m.author}}</span>
+                                                                            <span class="price"><span
+                                                                                    class="woocommerce-Price-amount amount"><span
+                                                                                        class="woocommerce-Price-currencySymbol">&#36;</span>{{m.price}}</span></span>
+                                                                        </div>
+                                                                    </a>
+                                                                    <div class="woo-button-wrapper">
+                                                                        <div class="woo-button-border"><a
+                                                                                :href="'/book/product?bookid='+ m.bookId"
+                                                                                class="button product-button">Detail</a>
+                                                                            <a  @click="addtocart(m.bookId)"
+                                                                                class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                rel="nofollow">Buy</a>
+                                                                        </div>
+                                                                    </div>
+                                                            </li>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                                <div class="cart_totals ">
+                                                    <h2>Cart totals</h2>
+                                                    <table cellspacing="0" class="shop_table shop_table_responsive">
+                                                        <tr class="order-total">
+                                                            <th>Total</th>
+                                                            <td data-title="Total" >
+                                                                <strong>
+                                                                    <span class="woocommerce-Price-amount amount" style="float: right">
+                                                                        <span class="woocommerce-Price-currencySymbol">&#36;</span>{{totalprice}}
+                                                                    </span>
+                                                                </strong>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <div class="wc-proceed-to-checkout">
+                                                        <a @click='buy()'
+                                                            class="checkout-button button alt wc-forward">
+                                                            Proceed to checkout</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="section-site-footer">
+            <div class="site-footer">
+                <div class="container">
+                    <div class="footer-menu-wrap">
+                        <ul id="menu-footer-menu" class="footer-menu nav navbar-nav navbar-center">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2796">
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2797">
+                                <a href="#">TOS</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2798">
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-credit">
+                        <p>Bookshop</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        var data = {
+            cartbooks: [
+                {
+                    quantity: '100', orderid: '41', totalprice: '10', price: "10",
+                    picname: "book-12.jpg", title: "C语言经典编程282例",
+                    username: "user", bookId: '13'
+                },
+                
+            ],
+            popularbooks: [
+                {
+                    bookId: 1, ISBN: '1', password: 'abc', title: '1', author: 'abc', version: '1', price: '12', pudate: 'abc', introdu: '1',
+                    picname: 'book-03.jpg', type: '1'
+                },
+            ],
+            totalprice:'100',
+        };
+        new Vue({
+            el: '#app',
+            data: data,
+            mounted: function () {
+                this.getcart();
+                this.getpopularbooks();
+                this.gettotalprice();
+            },
+            methods: {
+                getcart: function () {
+                    var that = this;
+                    $.ajax({
+                        type: "get",
+                        url: "http://123.56.107.216:9000/order/SelectAll",
+                        dataType: "json",
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        success: function (data) {
+                            if(data=="用户未登录！"){
+                                alert(data);
+                                window.location.href("/user/login");
+                            }
+                            else{
+                                that.cartbooks = [];
+                                for (let index in data) {
+                                    that.cartbooks.push(data[index]);
+                                }
+                            }
+                        }
+                    });
+                },
+                buy: function () {
+                    var that = this;
+                    $.ajax({
+                        type: "get",
+                        url: "http://123.56.107.216:9000/order/Buy",
+                        dataType: "json",
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        success: function (data) {
+                            if(data.status==1){
+                                alert(data.data);
+                                window.location.href="/";
+                            }
+                            else{
+                                alert(data.data);
+                            }
+                        }
+                    });
+                },
+                gettotalprice:function(){
+                    var that = this;
+                    $.ajax({
+                        type: "get",
+                        url: "http://123.56.107.216:9000/order/totalprice",
+                        dataType: "json",
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        success: function (data) {
+                            that.totalprice = data;
+                            
+                        }
+                    });     
+                },
+                getpopularbooks: function () {
+                    var that = this;
+                    $.ajax({
+                        type: "get",
+                        url: "http://123.56.107.216:9000/getpopularbooks",
+                        dataType: "json",
+                        success: function (data) {
+                            that.popularbooks = [];
+                            for (let index in data) {
+                                that.popularbooks.push(data[index]);
+                            }
+                        }
+                    });
+                },
+                addtocart: function (bookid) {
+                    var that = this;
+                    $.ajax({
+                        type: "get",
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        url: "http://123.56.107.216:9000/order/AddToOrderbyOne",
+                        dataType: "json",
+                        data: { bookid: bookid },
+                        success: function (data) {
+                                alert(data.data);
+                                location.reload(true);
+                        },
+                    });
+                },
+                deletecartbook: function (orderid) {
+                    var that = this;
+                    $.ajax({
+                        type: "get",
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        url: "http://123.56.107.216:9000/order/Delete",
+                        dataType: "json",
+                        data: { orderid: orderid },
+                        success: function (data) {
+                            if(data.status==1){
+                                alert(data.data);
+                                location.reload(true);
+                            }
+                            else{
+                                alert(data.data);
+                            }
+                        },
+                        error:function(data){
+                            alert("请登录管理员账号");
+                            window.location.href("/admin/login");
+
+                        }
+                    });
+                },
+            }
+        });
+    </script>
+<script>
+        new Vue({
+            el: '#head',
+            data: data,
+            methods: {
+                userlogout: function () {
+                    var that = this;
+                    $.ajax({
+                        type: "post",
+                        url: "http://123.56.107.216:9000/user/logout",
+                        dataType: "json",
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        success: function (data) {
+                            alert(data.data);
+                        }
+                    });
+                },
+                adminlogout: function () {
+                    var that = this;
+                    $.ajax({
+                        type: "post",
+                        //crossDomain: true,
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        url: "http://123.56.107.216:9000/admin/logout",
+                        dataType: "json",
+                        success: function (data) {
+                                alert(data.data);
+                                
+                        },
+                    });
+                },
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        var c = document.body.className;
+        c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+        document.body.className = c;
+    </script>
+    <script type='text/javascript'
+        src='/content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
+    <script type='text/javascript'
+        src='/content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=3.6.4'></script>
+    <script type='text/javascript'
+        src='/content/plugins/woocommerce/assets/js/frontend/country-select.min.js?ver=3.6.4'></script>
+    <script type='text/javascript'
+        src='/content/plugins/woocommerce/assets/js/frontend/address-i18n.min.js?ver=3.6.4'></script>
+    <script type='text/javascript' src='/content/plugins/woocommerce/assets/js/frontend/cart.min.js?ver=3.6.4'></script>
+    <script type='text/javascript'
+        src='/content/plugins/woocommerce/assets/js/selectWoo/selectWoo.full.min.js?ver=1.0.6'></script>
+    <script type='text/javascript' src='/admin/js/password-strength-meter.min.js?ver=5.2.1'></script>
+    <script type='text/javascript'
+        src='/content/plugins/woocommerce/assets/js/frontend/password-strength-meter.min.js?ver=3.6.4'></script>
+    <script type='text/javascript'
+        src='/content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=3.6.4'></script>
+    <script type='text/javascript' src='/content/themes/bookie/vendor/bootstrap/js/bootstrap.min.js?ver=3.3.5'></script>
+    <script type='text/javascript'
+        src='/content/themes/bookie/vendor/smartmenu/jquery.smartmenus.min.js?ver=1.0.0'></script>
+    <script type='text/javascript'
+        src='/content/themes/bookie/vendor/smartmenu/jquery.smartmenus.bootstrap.min.js?ver=0.2.0'></script>
+    <script type='text/javascript' src='/content/themes/bookie/js/script.js?ver=1.4.5'></script>
+    <script type='text/javascript' src='/includes/js/embed.min.js?ver=5.2.1'></script>
+</body>
+
+</html>
